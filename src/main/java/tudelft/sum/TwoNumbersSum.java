@@ -25,7 +25,7 @@ class TwoNumbersSum {
             result.add(i, total);
         }
 
-        Collections.reverse(result);
+        //Collections.reverse(result);
         return result;
     }
 }

@@ -1,5 +1,11 @@
 package tudelft.discount;
 
+import tudelft.invoicemocked.Invoice;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
 public class DiscountApplier {
 
     private ProductDao dao;
@@ -8,7 +14,7 @@ public class DiscountApplier {
         this.dao = dao;
     }
 
-    public void setNewPrices() {
+    public void  setNewPrices() {
 
         for(Product product : dao.all()) {
             if(product.getCategory().equals("BUSINESS")) {
@@ -20,4 +26,6 @@ public class DiscountApplier {
         }
 
     }
+
+
 }

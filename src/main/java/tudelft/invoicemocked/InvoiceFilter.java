@@ -7,7 +7,8 @@ public class InvoiceFilter {
 
     private InvoiceDao dao;
 
-    public InvoiceFilter (InvoiceDao dao) {
+    public InvoiceFilter(InvoiceDao dao) {
+
         this.dao = dao;
     }
 

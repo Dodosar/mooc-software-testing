@@ -19,11 +19,13 @@ public class InvoiceFilterTest {
         List<Invoice> results = Arrays.asList(mauricio, arie);
         Mockito.when(dao.all()).thenReturn(results);
 
+
         InvoiceFilter filter = new InvoiceFilter(dao);
         List<Invoice> result = filter.filter();
 
-        Assertions.assertEquals(mauricio, result.get(0));
+        Assertions.assertEquals(mauricio, results.get(0));
         Assertions.assertEquals(1, result.size());
+
     }
 
 }
